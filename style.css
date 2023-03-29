@@ -12,7 +12,7 @@
     --ff-secondary: 'Poppins', sans-serif;
     --ff-icons: 'Font Awesome 6 Brands';
 
-    --fs-400: 1rem;
+    --fs-400: 1.125rem;
     --fs-600: 1.6rem;
 
     --fw-normal: 400;
@@ -73,8 +73,10 @@ body {
     background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;  
     
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 40rem) {
@@ -90,7 +92,8 @@ body {
 
 @media (min-width: 40rem) {
     .container {
-        padding: 5rem;
+        padding: 0;
+        margin: auto 5rem;
     }
 }
 
@@ -114,9 +117,8 @@ li {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 }
 
 @media (min-width: 40rem) {
@@ -154,11 +156,11 @@ li {
 
 .button {
     align-self: center;
-    padding: 1em 5em;
-    margin-top: 1em;
+    padding: 1em 4em;
     margin-bottom: 3rem;
     font-size: .825rem;
     color: var(--clr-primary-400);
+    background-color: var(--clr-neutral-100);
     border-radius: 2rem;
     border: none;
     box-shadow: var(--shadow);
@@ -168,7 +170,6 @@ li {
     .button {
         align-self: flex-start;
         font-size: var(--fs-400);
-        padding: 1.25em 5em;
     }
 }
 
@@ -182,7 +183,6 @@ li {
     display: flex;
     justify-content: center;
     gap: 1em;
-    margin-top: 1rem;
 }
 
 @media (min-width: 40rem) {
